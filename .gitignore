@@ -1,0 +1,7 @@
+*.log
+*.zip
+*.sql
+*.cache
+.DS_Store
+
+node_modules

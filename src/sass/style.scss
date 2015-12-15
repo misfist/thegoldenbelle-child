@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+
+/*
+Theme Name: The Golden Belle Salon Theme
+Theme URI: https://github.com/misfist/thegoldenbelle.com
+Description: Child Theme for Loom
+Author: Pea
+Author URI: http://misfist.com
+Template: loom
+Version: 1.0.0
+*/
+
+
+// 1. Configuration and helpers
+@import
+  'utils/variables',
+  'utils/functions',
+  'utils/mixins';
+
+// 2. Vendors
+// @import
+//   'vendor/normalize';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/buttons';
+
+// 6. Page-specific styles
+@import
+  'pages/home';
+
+// 7. Themes
+@import
+  'themes/default';

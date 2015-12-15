@@ -1,0 +1,11 @@
+/*
+Theme Name: The Golden Belle Salon Theme
+Theme URI: https://github.com/misfist/thegoldenbelle.com
+Description: Child Theme for Loom
+Author: Pea
+Author URI: http://misfist.com
+Template: loom
+Version: 1.0.0
+*/
+
+@import url('../loom/style.css');
