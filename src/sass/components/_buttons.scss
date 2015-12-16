@@ -1,3 +1,16 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.btn,
+.btn-primary,
+.yikes-easy-mc-submit-button {
+    border-radius: 0 !important;
+    border-color: $brand-color !important;
+    background-color: $brand-color !important;
+
+    &:hover,
+    &:focus {
+        background-color: darken( $brand-color, 1 );
+    }
+}

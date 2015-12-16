@@ -83,6 +83,19 @@ body {
   position: absolute;
   width: 1px; }
 
+.btn,
+.btn-primary,
+.yikes-easy-mc-submit-button {
+  border-radius: 0 !important;
+  border-color: #f461a8 !important;
+  background-color: #f461a8 !important; }
+  .btn:hover, .btn:focus,
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .yikes-easy-mc-submit-button:hover,
+  .yikes-easy-mc-submit-button:focus {
+    background-color: #f45ca5; }
+
 .rev_slider {
   text-align: center; }
   .rev_slider .button {
@@ -117,6 +130,19 @@ body {
   padding-left: 0; }
   .null-instagram-feed ul li:before {
     content: none; }
+
+.btn,
+.btn-primary,
+.yikes-easy-mc-submit-button {
+  border-radius: 0 !important;
+  border-color: #f461a8 !important;
+  background-color: #f461a8 !important; }
+  .btn:hover, .btn:focus,
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .yikes-easy-mc-submit-button:hover,
+  .yikes-easy-mc-submit-button:focus {
+    background-color: #f45ca5; }
 
 .slider-headline {
   color: #fff;
