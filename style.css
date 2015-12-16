@@ -98,6 +98,26 @@ body {
       color: #fff;
       text-decoration: none; }
 
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden; }
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important; }
+
+.null-instagram-feed ul li {
+  width: 33%;
+  display: inline-block;
+  margin-left: 0;
+  padding-left: 0; }
+  .null-instagram-feed ul li:before {
+    content: none; }
+
 .slider-headline {
   color: #fff;
   font: normal 300%/2.4 "Helvetica Neue", "Helvetica", "Arial", sans-serif;
