@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+
+.rev_slider {
+    text-align: center;
+
+    .button {
+        display: inline-block;
+        background-color: $brand-color;
+        border-radius: 0;
+        padding: 6px 10px;
+        margin-right: auto;
+        margin-left: auto;
+        border: 1px solid $white;
+        color: $white;
+
+        &:hover,
+        &:focus {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}

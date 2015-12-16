@@ -1,3 +1,19 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+.slider-headline {
+    color: $white;
+    font: normal 300% / 2.4 $header-font-stack;
+    text-shadow: 2px 3px 3px #333;
+}
+
+.tp-button {
+    display: inline-block;
+    background-color: $black;
+    border-radius: 0;
+    border: 1px solid $white;
+    height: 30px !important;
+    line-height: 30px !important;
+    color: $white;
+}
