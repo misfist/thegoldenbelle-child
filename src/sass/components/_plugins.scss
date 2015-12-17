@@ -6,6 +6,11 @@
 .rev_slider {
     text-align: center;
 
+    .slider-headline {
+        font-size: 5rem;
+        font-weight: bold;
+    }
+
     .button {
         display: inline-block;
         background-color: $brand-color;

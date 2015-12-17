@@ -88,7 +88,8 @@ body {
 .yikes-easy-mc-submit-button {
   border-radius: 0 !important;
   border-color: #f461a8 !important;
-  background-color: #f461a8 !important; }
+  background-color: #f461a8 !important;
+  text-transform: uppercase; }
   .btn:hover, .btn:focus,
   .btn-primary:hover,
   .btn-primary:focus,
@@ -98,6 +99,9 @@ body {
 
 .rev_slider {
   text-align: center; }
+  .rev_slider .slider-headline {
+    font-size: 5rem;
+    font-weight: bold; }
   .rev_slider .button {
     display: inline-block;
     background-color: #f461a8;
@@ -144,3 +148,7 @@ body {
   height: 30px !important;
   line-height: 30px !important;
   color: #fff; }
+
+.navbar-brand img {
+  max-width: 400px;
+  height: auto; }
