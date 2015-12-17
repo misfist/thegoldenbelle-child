@@ -24,6 +24,9 @@
     }
 }
 
+.aq-block-aq_blog_block {
+    @extend .container;
+}
 
 .google-maps {
     position: relative;

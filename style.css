@@ -42,7 +42,7 @@ body {
  * 2. Center it in the viewport
  * 3. Leave some space on the edges, especially valuable on small screens
  */
-.container {
+.container, .aq-block-aq_blog_block {
   max-width: 1200px;
   /* 1 */
   margin-left: auto;
