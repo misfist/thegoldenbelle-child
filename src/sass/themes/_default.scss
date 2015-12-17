@@ -3,6 +3,15 @@
 // default one.
 // -----------------------------------------------------------------------------
 
+a {
+    color: $brand-color;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        color: darken( $brand-color, 3 );
+    }
+}
+
 .navbar-brand {
     img {
         max-width: 400px;

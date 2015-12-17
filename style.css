@@ -149,6 +149,12 @@ body {
   line-height: 30px !important;
   color: #fff; }
 
+a {
+  color: #f461a8;
+  text-decoration: none; }
+  a:hover, a:focus {
+    color: #f353a0; }
+
 .navbar-brand img {
   max-width: 400px;
   height: auto; }
