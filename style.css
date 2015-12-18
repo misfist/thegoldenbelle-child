@@ -7,6 +7,7 @@ Author URI: http://misfist.com
 Template: loom
 Version: 1.0.0
 */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
 /**
  * Set up a decent box model on the root element
  */
@@ -27,7 +28,19 @@ a {
  */
 body {
   color: #2d2d2d;
-  font: normal 125%/1.4 "Raleway", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+  font-weight: 500; }
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a {
+    font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 /**
  * Clear inner floats
