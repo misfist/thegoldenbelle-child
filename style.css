@@ -28,16 +28,23 @@ a {
  */
 body {
   color: #2d2d2d;
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font: normal 14px/24px "Raleway", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+
+p,
+li,
+label,
+a {
+  font: normal 14px/24px "Raleway", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 h1,
 h2,
+.sumome-popup-form .sumome-popup-heading,
 h3,
 h4 {
   font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
   font-weight: 500; }
   h1 a,
-  h2 a,
+  h2 a, .sumome-popup-form .sumome-popup-heading a,
   h3 a,
   h4 a {
     font-family: "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
@@ -111,6 +118,22 @@ h4 {
   .yikes-easy-mc-submit-button:focus {
     background-color: #f45ca5; }
 
+.widget_recent_entries ul {
+  margin-left: 0;
+  list-style: none; }
+  .widget_recent_entries ul li:before {
+    content: '\e800';
+    font-weight: normal;
+    vertical-align: top;
+    display: inline-block;
+    font-family: 'fontello-circle';
+    color: #f461a8;
+    font-size: 8px;
+    position: relative;
+    top: 0;
+    left: -7px;
+    text-indent: -10px; }
+
 .rev_slider {
   text-align: center; }
   .rev_slider .slider-headline {
@@ -149,6 +172,12 @@ h4 {
   .null-instagram-feed ul li:before {
     content: none; }
 
+.sumome-popup-form .sumome-popup-text {
+  font: normal 14px/24px "Raleway", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+
+.lead.lite a:hover, .lead.lite a:focus {
+  text-decoration: none; }
+
 .slider-headline {
   color: #fff;
   font: normal 300%/2.4 "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -162,6 +191,19 @@ h4 {
   height: 30px !important;
   line-height: 30px !important;
   color: #fff; }
+
+/* Fix 3-column layout */
+.aq-block-aq_icon_column_block {
+  /* Medium Devices, Desktops */ }
+  @media only screen and (min-width: 992px) {
+    .aq-block-aq_icon_column_block {
+      width: 33% !important; } }
+
+#our-services .inner {
+  padding-bottom: 0; }
+
+.grid-blog.col3 .post {
+  width: 30.5%; }
 
 a {
   color: #f461a8;

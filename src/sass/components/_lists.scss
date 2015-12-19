@@ -1,0 +1,22 @@
+.widget_recent_entries {
+    ul {
+
+        margin-left: 0;
+        list-style: none;
+        li {
+            &:before {
+                content: '\e800';
+                font-weight: normal;
+                vertical-align: top;
+                display: inline-block;
+                font-family: 'fontello-circle';
+                color: $brand-color;
+                font-size: 8px;
+                position: relative;
+                top: 0;
+                left: -7px;
+                text-indent: -10px;                
+            }
+        }
+    }
+}

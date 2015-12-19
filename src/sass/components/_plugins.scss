@@ -71,3 +71,20 @@
 .icon-s- {
     @extend .icon-s-pinterest;
 }
+
+
+.sumome-popup-form {
+    .sumome-popup-heading {
+        @extend h2;
+    } 
+   .sumome-popup-text {
+       font: normal 14px / 24px $text-font-stack;
+   }
+}
+
+.lead.lite a {
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}

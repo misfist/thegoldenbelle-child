@@ -2,8 +2,15 @@
  * Basic typography style for copy text
  */
 body {
-  color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+    color: $text-color;
+    font: normal 14px / 24px $text-font-stack;
+}
+
+p,
+li,
+label,
+a {
+    font: normal 14px / 24px $text-font-stack;
 }
 
 h1,

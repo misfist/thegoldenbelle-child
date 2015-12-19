@@ -17,3 +17,24 @@
     line-height: 30px !important;
     color: $white;
 }
+
+/* Fix 3-column layout */
+.aq-block-aq_icon_column_block {
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+        width: 33% !important;
+    }
+}
+
+#our-services {
+
+    .inner {
+        // padding-top: 0;
+        padding-bottom: 0;
+    }
+
+}
+
+
+
