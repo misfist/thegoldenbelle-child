@@ -3,10 +3,24 @@
 // -----------------------------------------------------------------------------
 
 .grid-blog {
-    .post {}
+
+    margin-left: 0;
+    .post {
+        //left-margin: 0;
+    }
     &.col3 {
         .post {
             width: 30.5%;
         }
     }
+    &.col2 {
+        @include respond-to('large') {
+            .post {
+                width: 46%
+            }
+        }
+    }
 }
+
+
+// .grid-blog.col3 .post, .grid-blog.col2 .post

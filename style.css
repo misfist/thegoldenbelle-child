@@ -202,8 +202,13 @@ h4 {
 #our-services .inner {
   padding-bottom: 0; }
 
-.grid-blog.col3 .post {
-  width: 30.5%; }
+.grid-blog {
+  margin-left: 0; }
+  .grid-blog.col3 .post {
+    width: 30.5%; }
+  @media (min-width: 1024px) {
+    .grid-blog.col2 .post {
+      width: 46%; } }
 
 a {
   color: #f461a8;
