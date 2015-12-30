@@ -8,7 +8,7 @@ if(! function_exists( 'thegoldenbelle_enqueue_styles' ) ) {
 
         wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
         wp_enqueue_style( 'thegoldenbelle-style',
-            trailingslashit( get_stylesheet_directory_uri() ) . 'style.css',
+            trailingslashit( get_stylesheet_directory_uri() ) . 'assets/styles/style.min.css',
             array( $parent_style )
         );
     }
