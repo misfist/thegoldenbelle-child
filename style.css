@@ -134,6 +134,21 @@ h4 {
     left: -7px;
     text-indent: -10px; }
 
+.widget ul {
+  list-style: none; }
+  .widget ul li:before {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    top: 0;
+    left: -7px;
+    content: '\e800';
+    font-weight: normal;
+    font-family: 'fontello-circle';
+    color: #f461a8;
+    font-size: 8px;
+    text-indent: -10px; }
+
 .rev_slider {
   text-align: center; }
   .rev_slider .slider-headline {
@@ -178,6 +193,9 @@ h4 {
 .lead.lite a:hover, .lead.lite a:focus {
   text-decoration: none; }
 
+ul.instagram-pics {
+  padding: 0; }
+
 .slider-headline {
   color: #fff;
   font: normal 300%/2.4 "Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -201,6 +219,9 @@ h4 {
 
 #our-services .inner {
   padding-bottom: 0; }
+
+.home .pagination {
+  display: none; }
 
 .grid-blog {
   margin-left: 0; }

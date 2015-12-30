@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the widget component.
+// -----------------------------------------------------------------------------
+
+.widget {
+
+    ul {
+        // margin-left: 0;
+        // padding-left: 0;
+        list-style: none;
+
+        li {
+            &:before {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                top: 0;
+                left: -7px;
+                content: '\e800';
+                font-weight: normal;
+                font-family: 'fontello-circle';
+                color: $brand-color;
+                font-size: 8px;
+                text-indent: -10px;
+            }
+            
+        }
+
+    }
+}
