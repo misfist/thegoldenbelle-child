@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the content.
+// -----------------------------------------------------------------------------
+
+.inner {
+    padding-top: 40px;
+}
+
+.page .post-content {
+    &> h2,
+    &> h3,
+    &> h4,
+    &> h5,
+    &> h6,
+    &> p,
+    &> ul,
+    &> ol,
+    &> div.meta {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .entry-title {
+        text-transform: uppercase;
+    }
+}
+
+
+.home.page .post-content {
+
+    .entry-title {
+        text-transform: none !important;
+    }
+
+}
+
+
+.grid-blog .post-title {
+
+    a {
+        font-size: 2rem;
+
+        &:hover,
+        &:focus {
+            color: $brand-color !important;
+        }
+
+    }
+}

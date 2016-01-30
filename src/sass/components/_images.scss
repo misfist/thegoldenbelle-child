@@ -1,0 +1,76 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the image component.
+// -----------------------------------------------------------------------------
+
+#our-services {
+
+    .col-wrapper {
+        padding: 0;
+
+        &::hover {
+            border: none;
+        }
+    }
+
+    figure {
+        display: block;
+        // overflow: hidden;
+        position: relative;
+
+        img {
+            display: block;
+            max-width: 100%;
+            -webkit-backface-visibility: hidden;
+            -o-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+
+        a {
+            &:hover {
+
+                img {
+                    -o-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                    -moz-transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                }
+
+                .image-caption {
+                    opacity: 1;
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+                    -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+                }
+
+            }
+
+            .image-caption {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                padding: 25% 2% 2% 2%;
+                height: 100%;
+                width: 100%;
+                background: $black;
+                background: rgba(53,53,53,0.85);
+                color: $white;
+
+                &:before {
+                    border: none;
+                }
+            }
+
+        }
+
+    }
+
+    .bm15 {
+        margin-bottom: 0 !important;
+    }
+
+
+}

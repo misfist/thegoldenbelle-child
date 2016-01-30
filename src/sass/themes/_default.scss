@@ -3,7 +3,9 @@
 // default one.
 // -----------------------------------------------------------------------------
 
-a {
+a,
+.meta a,
+a.more {
     color: $brand-color;
     text-decoration: none;
     &:hover,
@@ -12,26 +14,272 @@ a {
     }
 }
 
-// h5.upper {
-//     color: $brand-color;
-// }
+.default .navbar-brand {
+    color: $white;
 
-// .services-1 .col-wrapper,
-// .services-1 .col-wrapper::before {
-//     &:hover,
-//     &:focus {
-//         border-color: $brand-color;
-//     }
-// }
+    &:hover,
+    &:focus {
+        color: $white;
+    }
 
-// .services-3 .icon i.icn {
-//     color: $brand-color;
-//     border-color: $brand-color;
-// }
+    max-width: 75%;
 
-.navbar-brand {
     img {
-        max-width: 400px;
+        max-width: 100%;
         height: auto;
     }
+
+    @media only screen and (min-width : 768px) {
+
+        width: 100%;
+        max-width: 100%;
+        height:  110px;
+
+        img {
+            max-height: 100px;
+            width: auto;
+            // margin-bottom: 40px;
+        }
+
+    }
+
+
 }
+
+
+
+
+
+
+/**
+ * Header
+ */
+.navbar-header {
+    background: $black;
+    border-top: 3px solid $dark-grey;
+}
+
+.navbar.basic.fixed .navbar-header {
+    background: rgba(0,0,0,0.94);
+}
+
+.navbar .dropdown-menu {
+    background: $dark-grey;
+}
+
+#sub-header .pull-left i  {
+    color: $brand-color !important;
+}
+
+/**
+ * Footer
+ */
+.footer {
+    background: $dark-grey;
+    a {
+        color: $white;
+
+        &:hover,
+        &:focus {
+            color: $brand-color !important;
+        }
+    }
+}
+
+.sub-footer {
+    background: $black;
+}
+
+/**
+ * Page Wrappers Backgounds
+ */
+.light-wrapper,
+#sub-header.sub-footer.social-light {
+    background: $white;
+}
+.dark-wrapper,
+#sub-header.sub-footer.social-line {
+    background: $light-grey;
+}
+
+/**
+ * Highlight Colours
+ */
+.spinner,
+.tp-loader,
+#fancybox-loading div {
+    border-left: 3px solid rgba($brand-color,.15) !important;
+    border-right: 3px solid rgba($brand-color,.15) !important;
+    border-bottom: 3px solid rgba($brand-color,.15) !important;
+    border-top: 3px solid rgba($brand-color,.8) !important;
+}
+
+.nav > li > a {
+    color: $white !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $brand-color !important;
+    }
+}
+
+.nav > li.active > a,
+.navbar .dropdown-menu > .active > a,
+.navbar .dropdown-menu a {
+    &:hover,
+    &:focus,
+    &:active {
+        color: $brand-color !important;
+    }
+}
+
+.navbar .dropdown-menu > .active > a {
+    color: $white !important;
+}
+
+.nav > li.active > a {
+    color: $brand-color !important;
+    background-color: $light-grey !important;
+}
+
+.widget_categories ul li:before,
+ul.circled li:before,
+aside ul li:before {
+    color: $brand-color !important;
+}
+
+.btn,
+.parallax .btn-submit,
+.btn-submit,
+.newsletter-wrapper #mc_embed_signup .button,
+.widget_ns_mailchimp form input[type='submit'],
+input[type='submit'],
+.bonfire-slideout-content input[type='submit'],
+input[type='button'],
+.woocommerce .widget_price_filter .ui-slider-horizontal .ui-slider-range, 
+.woocommerce-page .widget_price_filter .ui-slider-horizontal .ui-slider-range,
+.woocommerce span.onsale, 
+.woocommerce-page span.onsale, 
+.woocommerce ul.products li.product .onsale, 
+.woocommerce-page ul.products li.product .onsale,
+.woocommerce .button,
+.added_to_cart,
+.ebor-count,
+.tp-caption a,
+.lead.lite a {
+    @extend %button;
+}
+
+.tooltip-inner {
+    background-color: $brand-color !important;
+}
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow,
+.tooltip.top-right .tooltip-arrow {
+    border-top-color: $brand-color !important;
+}
+.tooltip.right .tooltip-arrow {
+    border-right-color: $brand-color !important;
+}
+.tooltip.left .tooltip-arrow {
+    border-left-color: $brand-color !important;
+}
+.tooltip.bottom .tooltip-arrow,
+.tooltip.bottom-left .tooltip-arrow,
+.tooltip.bottom-right .tooltip-arrow {
+    border-bottom-color: $brand-color !important;
+}
+.services-1 .col-wrapper:hover,
+.services-1 .col-wrapper:hover:before,
+.woocommerce .price {
+    border-color: $light-grey !important;
+}
+.services-3 .icon i.icn {
+    color: $brand-color !important;
+    border: 2px solid $brand-color !important;
+}
+.services-3 .col:hover i.icn {
+    background-color: $brand-color !important;
+    color: $white !important;
+}
+.panel-title > a:hover {
+    color: $brand-color !important;
+}
+.progress-list li em {
+    color: $brand-color !important;
+}
+.progress.plain,
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content, .woocommerce-page .widget_price_filter .price_slider_wrapper .ui-widget-content {
+    border: 1px solid $brand-color !important;
+}
+.progress.plain .bar {
+    background: $brand-color !important;
+}
+.meta.tags a:hover {
+    color: $brand-color !important;
+}
+.owl-carousel .owl-controls .owl-prev:hover,
+.owl-carousel .owl-controls .owl-next:hover {
+    border: 1px solid $brand-color !important;
+    color: $brand-color !important;
+}
+.navigation a:hover {
+    border: 1px solid $brand-color !important;
+    color: $brand-color !important;
+}
+
+#testimonials .author,
+.tabs-top .tab a:hover,
+.tabs-top .tab.active a {
+    color: $brand-color !important;
+}
+.parallax a:hover {
+    color: $brand-color;
+}
+.pagination ul > li > a:hover,
+.pagination ul > li > a:focus,
+.pagination ul > .active > a,
+.pagination ul > .active > span {
+    border: 1px solid $brand-color !important;
+    color: $brand-color !important;
+}
+.sidebox a:hover {
+    color: $brand-color !important;
+}
+#comments .info h2 a:hover {
+    color: $brand-color !important;
+}
+#comments a.reply-link:hover {
+    color: $brand-color !important;
+}
+.pricing .plan h4 span {
+    color: $brand-color !important;
+}
+.bonfire-slideout-button:hover {
+    color: $brand-color !important;
+}
+.bonfire-slideout-close:hover,
+.woocommerce .button:hover,
+.added_to_cart:hover,
+.woocommerce .price,
+.woocommerce-tabs ul.tabs li a:hover,
+.woocommerce-tabs ul.tabs li.active a {
+    color: $brand-color !important;
+}
+.bonfire-slideout-content .btn-submit {
+    background: $brand-color !important;
+}
+@media (max-width: 991px) { 
+    .navbar-nav > li > a,
+    .navbar-nav > li > a:focus {
+        color: $brand-color !important;
+    }
+}
+
+.widget-title a {
+    color: $white !important;
+}
+
+
+

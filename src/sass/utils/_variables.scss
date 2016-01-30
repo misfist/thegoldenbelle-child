@@ -5,16 +5,16 @@
 
 /// Header font family
 /// @type List
-$header-font-stack: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$header-font-stack: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Raleway', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
 /// Code (monospace) font family
 /// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace;
 
 
 
@@ -23,23 +23,23 @@ $white: #fff;
 
 /// Copy text color
 /// @type Color
-$text-color: $black !default;
+$text-color: $black;
 
 /// Main brand color
 /// @type Color
-$brand-color: #f461a8 !default;
+$brand-color: #f461a8;
 
 /// Light grey
 /// @type Color
-$light-grey: #EDEDED !default;
+$light-grey: #ededed;
 
 /// Medium grey
 /// @type Color
-$mid-grey: #F5F5F5 !default;
+$mid-grey: #ccc;
 
 /// Dark grey
 /// @type Color
-$dark-grey: #444 !default;
+$dark-grey: #444;
 
 
 
