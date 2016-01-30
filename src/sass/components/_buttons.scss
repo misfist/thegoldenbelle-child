@@ -9,6 +9,7 @@
     border-color: $brand-color !important;
     color: $white !important;
     text-transform: uppercase;
+    text-decoration: none;
 
     &:hover,
     &:focus,
@@ -16,12 +17,14 @@
 
         background: darken($brand-color, 20%) !important;
         color: $white !important;
+        text-decoration: none;
 
     }
 }
 
 .btn,
 .btn-primary,
-.yikes-easy-mc-submit-button {
+.yikes-easy-mc-submit-button,
+.share .btn {
     @extend %button;
 }

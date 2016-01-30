@@ -2,7 +2,9 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-
+/**
+ * Revolution Slider
+ */
 .rev_slider {
     text-align: center;
 
@@ -29,10 +31,16 @@
     }
 }
 
+/**
+ * Blog Block
+ */
 .aq-block-aq_blog_block {
     @extend .container;
 }
 
+/**
+ * Map
+ */
 .google-maps {
     position: relative;
     padding-bottom: 75%; // This is the aspect ratio
@@ -48,6 +56,9 @@
     }
 }
 
+/**
+ * Instagram
+ */
 .null-instagram-feed {
 
     ul { 
@@ -68,27 +79,52 @@
     }
 }
 
+/**
+ * Share Icons
+ */
 .icon-s- {
     @extend .icon-s-pinterest;
 }
 
-
-.sumome-popup-form {
-    .sumome-popup-heading {
-        @extend h2;
-    } 
-   .sumome-popup-text {
-       font: normal 14px / 24px $text-font-stack;
-   }
-}
-
-.lead.lite a {
-    &:hover,
-    &:focus {
-        text-decoration: none;
-    }
-}
+/**
+ * Revolution Slider
+ */
+// .lead.lite a {
+//     &:hover,
+//     &:focus {
+//         text-decoration: none;
+//     }
+// }
 
 ul.instagram-pics {
     padding: 0;
 }
+
+
+/**
+ * Simple Instagram 
+ */
+ul.si-widget {
+    padding: 8px;
+    list-style: none;
+    background-color: rgba(253,253,253,.4);
+
+    li {
+        display: inline-block;
+        text-align: center;
+        width: 33%;
+        padding: 1px;
+
+        &:before {
+            content: none;
+        }
+        a {
+            
+            
+        }
+        img {
+            margin-bottom: 0;
+        }
+    }
+
+} 
