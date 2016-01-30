@@ -14,41 +14,6 @@ a.more {
     }
 }
 
-.default .navbar-brand {
-    color: $white;
-
-    &:hover,
-    &:focus {
-        color: $white;
-    }
-
-    max-width: 75%;
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    @media only screen and (min-width : 768px) {
-
-        width: 100%;
-        max-width: 100%;
-        height:  110px;
-
-        img {
-            max-height: 100px;
-            width: auto;
-            // margin-bottom: 40px;
-        }
-
-    }
-
-
-}
-
-
-
-
 
 
 /**
