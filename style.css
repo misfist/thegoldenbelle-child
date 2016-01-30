@@ -359,6 +359,9 @@ ul.si-widget {
     ul.si-widget li img {
       margin-bottom: 0; }
 
+.aq-block.aq-first {
+  clear: both; }
+
 .inner {
   padding-top: 40px; }
 
@@ -422,14 +425,17 @@ ul.si-widget {
 
 a,
 .meta a,
-a.more {
+a.more,
+.post-content a {
   color: #f461a8;
   text-decoration: none; }
   a:hover, a:focus,
   .meta a:hover,
   .meta a:focus,
   a.more:hover,
-  a.more:focus {
+  a.more:focus,
+  .post-content a:hover,
+  .post-content a:focus {
     color: #f353a0; }
 
 /**

@@ -5,7 +5,8 @@
 
 a,
 .meta a,
-a.more {
+a.more,
+.post-content a {
     color: $brand-color;
     text-decoration: none;
     &:hover,
@@ -13,7 +14,6 @@ a.more {
         color: darken( $brand-color, 3 );
     }
 }
-
 
 
 /**
