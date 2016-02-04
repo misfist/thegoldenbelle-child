@@ -17,8 +17,7 @@ class AQ_Call_To_Action_Block extends AQ_Block {
 	
 	function form($instance) {
 		$defaults = array(
-			'text' => '',
-			'target' => ''
+			'text' => ''
 		);
 		$instance = wp_parse_args($instance, $defaults);
 		extract($instance);
@@ -48,7 +47,6 @@ class AQ_Call_To_Action_Block extends AQ_Block {
 		
 		<div class="text-center">
 			<p class="lead lite">
-				<?php echo $target; ?>
 				<a href="<?php echo esc_url($text); ?>" target="_blank"><?php echo htmlspecialchars_decode($title); ?></a>
 			</p>
 		</div>
