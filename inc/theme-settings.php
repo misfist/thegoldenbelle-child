@@ -18,6 +18,11 @@ if(!( class_exists('AQ_Blog_Block') )){
     aq_register_block('AQ_Blog_Block');
 }
 
+if(!( class_exists('AQ_Call_To_Action_Block') )){
+    require_once ( trailingslashit( get_stylesheet_directory() ) . 'page_builder_blocks/call_to_action_block.php' );
+    aq_register_block('AQ_Call_To_Action_Block');
+}
+
 /**
  * Register Footer Widget for Copyright
  */
