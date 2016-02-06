@@ -86,15 +86,6 @@
     @extend .icon-s-pinterest;
 }
 
-/**
- * Revolution Slider
- */
-// .lead.lite a {
-//     &:hover,
-//     &:focus {
-//         text-decoration: none;
-//     }
-// }
 
 ul.instagram-pics {
     padding: 0;
@@ -105,9 +96,10 @@ ul.instagram-pics {
  * Simple Instagram 
  */
 ul.si-widget {
-    padding: 8px;
+    padding: 0;
+    margin: 0;
     list-style: none;
-    background-color: rgba(253,253,253,.4);
+    //background-color: rgba(253,253,253,.4);
 
     li {
         display: inline-block;
@@ -128,3 +120,19 @@ ul.si-widget {
     }
 
 } 
+
+/**
+ * Search and Filter Widget
+ */
+.searchandfilter {
+    ul {
+        list-style: none;
+        margin-bottom: 0;
+        li {
+            padding-left: 0;
+            &:before {
+                content: none;
+            }
+        }
+    }
+}
