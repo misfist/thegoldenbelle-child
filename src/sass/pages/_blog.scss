@@ -6,11 +6,12 @@
 
     margin-left: 0;
     .post {
-        //left-margin: 0;
+        width: 100%;
     }
     &.col3 {
         .post {
-            width: 30.5%;
+            width: 100%;
+            
         }
     }
     &.col2 {
@@ -22,5 +23,25 @@
     }
 }
 
+@media (min-width: 768px) {
 
-// .grid-blog.col3 .post, .grid-blog.col2 .post
+    .grid-blog {
+        &.col3 {
+            .post {
+                width: 47.5%;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 993px) {
+    .grid-blog {
+        &.col3 {
+            .post {
+                width: 30.5%;
+            }
+        }
+    }
+
+}

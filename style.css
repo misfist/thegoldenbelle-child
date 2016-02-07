@@ -425,11 +425,21 @@ ul.si-widget {
 
 .grid-blog {
   margin-left: 0; }
+  .grid-blog .post {
+    width: 100%; }
   .grid-blog.col3 .post {
-    width: 30.5%; }
+    width: 100%; }
   @media (min-width: 1024px) {
     .grid-blog.col2 .post {
       width: 46%; } }
+
+@media (min-width: 768px) {
+  .grid-blog.col3 .post {
+    width: 47.5%; } }
+
+@media (min-width: 993px) {
+  .grid-blog.col3 .post {
+    width: 30.5%; } }
 
 a,
 .meta a,
