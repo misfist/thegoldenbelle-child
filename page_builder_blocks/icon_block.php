@@ -1,5 +1,4 @@
 <?php
-
 class AQ_Icon_Column_Block extends AQ_Block {
     
     //set and create block
