@@ -47,3 +47,15 @@
 
     }
 }
+
+.lead {
+    display: block !important;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.spacer {
+    @extend .clearfix;
+}
