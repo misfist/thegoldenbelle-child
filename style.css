@@ -427,8 +427,6 @@ ul.si-widget {
   margin-left: 0; }
   .grid-blog .post {
     width: 100%; }
-  .grid-blog.col3 .post {
-    width: 100%; }
   @media (min-width: 1024px) {
     .grid-blog.col2 .post {
       width: 46%; } }

@@ -10,7 +10,11 @@
     }
     &.col3 {
         .post {
-            width: 100%;
+            // width: 100%;
+        @extend .col-sm-12;
+        @extend .col-md-6;
+        @extend .col-sm-4;
+            
         }
     }
     &.col2 {
