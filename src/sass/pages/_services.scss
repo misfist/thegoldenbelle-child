@@ -1,0 +1,14 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the interior pages.
+// -----------------------------------------------------------------------------
+
+.page:not(.home) {
+    .aq-block-aq_revslider_block + p {
+        margin-top: 25px;
+    }
+
+    .post-content > p {
+        @extend .lead;
+    }
+}
+
