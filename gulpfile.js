@@ -1,10 +1,10 @@
-// npm install --save-dev gulp gulp-plumber gulp-watch gulp-livereload gulp-minify-css gulp-jshint jshint-stylish gulp-uglify gulp-rename gulp-notify gulp-include gulp-sass
+// npm install --save-dev gulp gulp-plumber gulp-watch gulp-livereload gulp-cssnano gulp-jshint jshint-stylish gulp-uglify gulp-rename gulp-notify gulp-include gulp-sass
 
 var gulp = require('gulp'),
 	plumber = require( 'gulp-plumber' ),
 	watch = require( 'gulp-watch' ),
 	livereload = require( 'gulp-livereload' ),
-	minifycss = require( 'gulp-minify-css' ),
+	minifycss = require( 'gulp-cssnano' ),
 	jshint = require( 'gulp-jshint' ),
 	stylish = require( 'jshint-stylish' ),
 	uglify = require( 'gulp-uglify' ),
@@ -24,7 +24,7 @@ gulp.task( 'sass', function() {
 	} )
 	.pipe( plumber( { errorHandler: onError } ) )
 	.pipe( sass() )
-	.pipe( gulp.dest( '.' ) )
+	.pipe( gulp.dest( './assets/styles' ) )
 	.pipe( minifycss() )
 	.pipe( rename( { suffix: '.min' } ) )
 	.pipe( gulp.dest( './assets/styles' ) )
