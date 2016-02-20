@@ -1,0 +1,90 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+ [class^="fa-"]:before {
+  font-family: "font-awesome-social";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.fa-flickr:before {
+    @extend .fa-social;
+    content: '\e800';
+} /* '' */
+.fa-digg:before {
+    @extend .fa-social;
+    content: '\e801'; 
+} /* '' */
+.fa-dribbble:before {
+    @extend .fa-social;
+    content: '\e802';
+} /* '' */
+.fa-paypal:before { 
+    @extend .fa-social;
+    content: '\e803';
+} /* '' */
+.fa-reddit:before {
+    @extend .fa-social;
+    content: '\e804';
+} /* '' */
+.fa-vimeo-squared:before {
+    @extend .fa-social;
+    content: '\e805';
+} /* '' */
+
+.fa-yelp {
+    border-color: #c41200 !important;
+    color:  #c41200 !important;
+    &:before {
+        @extend .icon-social;
+        content: '\e806';        
+    }   /* '' */ 
+}
+a:hover .fa-yelp,
+a:focus .fa-yelp {
+    background-color: lighten(#c41200, 20%) !important;
+    color: $white !important;
+}
+.fa-youtube:before {
+    @extend .fa-social;
+    content: '\e807'; 
+} /* '' */
+.fa-wordpress:before {
+    @extend .fa-social;
+    content: '\e808'; 
+} /* '' */
+.fa-youtube-play:before {
+    @extend .fa-social;
+    content: '\e809';
+} /* '' */
+

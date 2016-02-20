@@ -23,6 +23,7 @@ Version: 1.0.0
 // 3. Base stuff
 @import
   'base/base',
+  'base/font-awesome-social',
   'base/fonts',
   'base/typography',
   'base/helpers';
@@ -40,7 +41,8 @@ Version: 1.0.0
   'components/images',
   'components/plugins',
   'components/blocks',
-  'components/content';
+  'components/content'
+  'components/icons';
 
 // 6. Page-specific styles
 @import
