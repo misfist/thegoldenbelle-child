@@ -3,6 +3,13 @@
 if(! function_exists( 'thegoldenbelle_enqueue_styles' ) ) {
 
     function thegoldenbelle_enqueue_styles() {
+        // Don't load Simply Instagram tooltips styles
+        wp_dequeue_style( 'tooltipster' );
+
+        // Don't load parent theme's Google Maps script
+        wp_dequeue_script( 'ebor-googlemapsapi' );
+        wp_dequeue_script( 'ebor-googlemapsapi' );
+
         $parent_style = 'ebor-style';
         $icon_fonts = 'ebor-style';
 
