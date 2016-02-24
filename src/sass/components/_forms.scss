@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the form component.
+// -----------------------------------------------------------------------------
+
+.ccf-form-wrapper {
+    .form-title {
+        display: none;
+    }
+
+    .field {
+        margin-bottom: .5em;
+        label.main-label {
+            @extend %visually-hidden;
+        }
+
+        @media only screen and (min-width : 992px) {
+
+            &.user_name,
+            &.user_email,
+            &.user_subject {
+                display: inline-block;
+                width: 32.9%;
+            }
+
+        }
+
+    }
+
+    .ccf-form-complete {
+        transition: background-color 0.5s ease;
+        padding: 1em;
+        background-color: $brand-color;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: $white;
+        text-transform: uppercase;
+    }
+
+}

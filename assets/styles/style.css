@@ -9,6 +9,13 @@ Template: loom
 Version: 1.0.0
 */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
+.ccf-form-wrapper .field label.main-label {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
 /**
  * Set up a decent box model on the root element
  */
@@ -239,6 +246,26 @@ input[type='button'],
     top: 0;
     left: -7px;
     text-indent: -10px; }
+
+.ccf-form-wrapper .form-title {
+  display: none; }
+
+.ccf-form-wrapper .field {
+  margin-bottom: .5em; }
+  @media only screen and (min-width: 992px) {
+    .ccf-form-wrapper .field.user_name, .ccf-form-wrapper .field.user_email, .ccf-form-wrapper .field.user_subject {
+      display: inline-block;
+      width: 32.9%; } }
+
+.ccf-form-wrapper .ccf-form-complete {
+  transition: background-color 0.5s ease;
+  padding: 1em;
+  background-color: #f461a8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: uppercase; }
 
 .widget ul {
   list-style: none; }
@@ -529,7 +556,7 @@ a:focus .fa-yelp {
   margin-left: 0; }
   .grid-blog .post {
     width: 100%; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .grid-blog.col2 .post {
       width: 46%; } }
 
