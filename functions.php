@@ -3,23 +3,21 @@
 if(! function_exists( 'thegoldenbelle_enqueue_styles' ) ) {
 
     function thegoldenbelle_enqueue_styles() {
-        // Don't load Simply Instagram tooltips styles
-        // wp_dequeue_style( 'tooltipster' );
-
-        // // Don't load parent theme's Google Maps script
-        // wp_dequeue_script( 'ebor-googlemapsapi' );
-        // wp_dequeue_script( 'google-maps' );
         
-        // wp_dequeue_script( 'ebor-googlemapsapi' );
-
-        $parent_style = 'ebor-style';
-        $icon_fonts = 'ebor-style';
-
-        wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-        wp_enqueue_style( 'thegoldenbelle-style',
-            trailingslashit( get_stylesheet_directory_uri() ) . 'assets/styles/style.min.css',
-            array( $parent_style )
+        $parent_main_style = 'ebor-style';
+        $parent_styles = array(
+            $parent_main_style,
+            'ebor-custom',
+            'ebor-bootstrap',
+            'ebor-owl',
+            'ebor-fancybox',
+            'ebor-fancybox-thumbs'
         );
+
+        wp_enqueue_style( $parent_main_style, get_template_directory_uri() . '/style.css' );
+        wp_enqueue_style( 'missdrepants-style',
+            trailingslashit( get_stylesheet_directory_uri() ) . 'assets/styles/style.min.css', $parent_styles );
+
     }
 
     add_action( 'wp_enqueue_scripts', 'thegoldenbelle_enqueue_styles' );
