@@ -253,7 +253,7 @@ input[type='button'],
 .ccf-form-wrapper .field {
   margin-bottom: .5em; }
   @media only screen and (min-width: 992px) {
-    .ccf-form-wrapper .field.user_name, .ccf-form-wrapper .field.user_email, .ccf-form-wrapper .field.user_subject {
+    .ccf-form-wrapper .field.user_name, .ccf-form-wrapper .field.user_email, .ccf-form-wrapper .field.user_subject, .ccf-form-wrapper .field.user-name, .ccf-form-wrapper .field.user-email, .ccf-form-wrapper .field.user-subject {
       display: inline-block;
       width: 32.9%; } }
 
